@@ -43,9 +43,11 @@ export const initDB = () => {
                 'genre TEXT,' +
                 'albumartist TEXT NOT NULL,' +
                 'composer TEXT NOT NULL,' +
-                '"year" TEXT NOT NULL,' +
-                'track INTEGER NOT NULL,' +
-                'disc INTEGER DEFAULT 0 NOT NULL,' +
+                'year TEXT NOT NULL,' +
+                'tracknum INTEGER NOT NULL,' +
+                'tracktotal INTEGER NOT NULL,' +
+                'discnum INTEGER DEFAULT 0 NOT NULL,' +
+                'disctotal INTEGER DEFAULT 0 NOT NULL,' +
                 'duration INTEGER DEFAULT 0 NOT NULL,' +
                 'bitrate INTEGER DEFAULT 0 NOT NULL,' +
                 'samplerate INTEGER DEFAULT 0 NOT NULL,' +
@@ -53,6 +55,7 @@ export const initDB = () => {
                 'bitspersample INTEGER DEFAULT 16 NOT NULL,' +
                 'rgTrackG NUMERIC,' +
                 'rgTrackP NUMERIC,' +
+                'rgAlbumG NUMERIC,' +
                 'rgAlbumP NUMERIC,' +
                 'bpm INTEGER DEFAULT 0 NOT NULL,' +
                 'filetype TEXT NOT NULL' +

@@ -102,7 +102,7 @@
                   <td class="p-1 w-3/12" v-html="track.artist"></td>
                   <td class="p-1 w-3/12" v-html="track.album"></td>
                   <td class="p-1 w-1/12" v-html="track.year"></td>
-                  <td class="p-1 w-1/12 text-right" v-html="track.track"></td>
+                  <td class="p-1 w-1/12 text-right" v-html="track.tracknum"></td>
                   <td class="p-1 w-1/12 text-right" v-html="track.duration"></td>
 
                 </tr>
