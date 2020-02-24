@@ -1,4 +1,9 @@
-# tuniac
+# Tuniac 3
+This is a work-in-progress concept for a version Tuniac version 3.
+It should be considered broken and not suitable for use at this stage.
+
+For the existing stable Tuniac please visit http://tuni.ac/ and https://sourceforge.net/projects/tuniac/files/
+
 
 ## Project setup
 ```
