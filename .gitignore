@@ -21,3 +21,4 @@ yarn-error.log*
 *.sw?
 
 /tuniac.db
+/dist_electron/
