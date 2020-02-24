@@ -72,7 +72,7 @@ export const initDB = () => {
 export const getTracks = () => {
     return new Promise((resolve, reject) => {
         let db = conn();
-        db.all('select entryId, title, artist, album, year, track, duration from library', (err, rows) => {
+        db.all('select entryId, title, artist, album, year, tracknum, duration from library', (err, rows) => {
             if (err) {
                 reject(err);
             } else {
