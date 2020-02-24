@@ -5,12 +5,24 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+
+### Compiles and hot-reloads for development ( Desktop )
+```
+npm run electron:serve
+```
+
+### Compiles and minifies for production ( Desktop )
+```
+npm run electron:serve
+```
+
+
+### Compiles and hot-reloads for development ( Web )
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production ( Web )
 ```
 npm run build
 ```
