@@ -40,6 +40,7 @@ export const initDB = () => {
                 'title TEXT NOT NULL,' +
                 'artist TEXT NOT NULL,' +
                 'album TEXT NOT NULL,' +
+                'comment TEXT,' +
                 'genre TEXT,' +
                 'albumartist TEXT NOT NULL,' +
                 'composer TEXT NOT NULL,' +
