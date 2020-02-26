@@ -74,18 +74,18 @@
       </div>
       <div class="w-4/5 h-full flex flex-col">
         <div class="text-xl flex-0">Media Library</div>
-        <div class="text-xl flex-1 border p-3">
+        <div class="text-xl flex-1 border p-2">
 
             <!-- todo: add loading spinner //-->
             <!-- Media library //-->
             <table class="text-left w-full h-full text-sm">
 
               <thead class="flex w-full">
-                <tr class="flex w-full mb-2 border-b">
-                  <th class="pb-1 w-3/12">Title</th>
-                  <th class="pb-1 w-3/12">Artist</th>
+                <tr class="flex w-full mb-2 border-b mr-4">
+                  <th class="pb-1 w-4/12">Title</th>
+                  <th class="pb-1 w-2/12">Artist</th>
                   <th class="pb-1 w-3/12">Album</th>
-                  <th class="pb-1 w-1/12">Year</th>
+                  <th class="pb-1 w-1/12 text-right">Year</th>
                   <th class="pb-1 w-1/12 text-right">Track</th>
                   <th class="pb-1 w-1/12 text-right">Time</th>
                 </tr>
@@ -98,12 +98,12 @@
                     :class="track.entryId === currentTrackId ? 'bg-blue-200' : ''"
                     class="flex flex-0 w-full mb-2">
 
-                  <td class="p-1 w-3/12" v-html="track.title"></td>
-                  <td class="p-1 w-3/12" v-html="track.artist"></td>
+                  <td class="p-1 w-4/12" v-html="track.title"></td>
+                  <td class="p-1 w-2/12" v-html="track.artist"></td>
                   <td class="p-1 w-3/12" v-html="track.album"></td>
-                  <td class="p-1 w-1/12" v-html="track.year"></td>
+                  <td class="p-1 w-1/12 text-right" v-html="track.year"></td>
                   <td class="p-1 w-1/12 text-right" v-html="track.tracknum"></td>
-                  <td class="p-1 w-1/12 text-right" v-html="track.duration"></td>
+                  <td class="p-1 w-1/12 text-right" v-html="track.duration/1000"></td>
 
                 </tr>
               </tbody>
